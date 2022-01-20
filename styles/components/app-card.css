@@ -1,0 +1,31 @@
+.app-card {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  height: fit-content;
+}
+
+.app-card__title {
+  margin: 5px 0;
+  color: #e84c3d;
+  font-size: 1.2rem;
+}
+
+.app-card__bookmark {
+  top: -15px;
+  right: 20px;
+  width: 2rem;
+  height: 3rem;
+  color: blue;
+  position: absolute;
+}
+
+.app-card__list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-left: 0;
+}
