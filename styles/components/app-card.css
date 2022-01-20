@@ -1,15 +1,17 @@
 .app-card {
   background-color: white;
+  color: black;
   padding: 10px;
   position: relative;
   border: 1px solid black;
-  width: 40%;
+  width: 100%;
   height: fit-content;
 }
 
 .app-card__title {
   margin: 5px 0;
-  color: black;
+  color: #e84c3d;
+  font-size: 1.2rem;
 }
 
 .app-card__bookmark {
