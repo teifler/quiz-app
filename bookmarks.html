@@ -10,24 +10,82 @@
   <body>
     <main>
       <h1>Bookmarked questions</h1>
-      <section>
-        <h2>Question</h2>
-        <p>Text of question</p>
-        <ul>
-          <li>Tag 1</li>
-          <li>Tag 2</li>
-          <li>Tag 3</li>
-          <li>Tag 4</li>
+      <section class="app-card">
+        <button class="app-card__bookmark"><img src="../../images/bookmark.svg" /></button>
+        <h2 class="app-card__title">Question</h2>
+        <p class="app-card__question">
+          What means HTML Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus!
+        </p>
+        <details>
+          <summary class="app-card__answer">Show answer</summary>
+          <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis beatae velit nesciunt, quod sint aut
+          libero architecto aliquid vel tempora.
+        </details>
+        <ul class="app-card__list">
+          <li class="app-card__list__item"><button class="app-card__button">Tag 1</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 2</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 3</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 4</button></li>
         </ul>
       </section>
-      <nav>
-        <ul role="list">
-          <li><a href="./index.html">Quiz App</a></li>
-          <li><a href="./create.html">Create a new Question</a></li>
-          <li><a href="./bookmarks.html">Bookmarks</a></li>
-          <li><a href="./profile.html">Profile</a></li>
+      <section class="app-card">
+        <button class="app-card__bookmark"><img src="../../images/bookmark.svg" /></button>
+        <h2 class="app-card__title">Question</h2>
+        <p class="app-card__question">
+          What means HTML Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus!
+        </p>
+        <details>
+          <summary class="app-card__answer">Show answer</summary>
+          <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis beatae velit nesciunt, quod sint aut
+          libero architecto aliquid vel tempora.
+        </details>
+        <ul class="app-card__list">
+          <li class="app-card__list__item"><button class="app-card__button">Tag 1</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 2</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 3</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 4</button></li>
         </ul>
-      </nav>
+      </section>
+      <section class="app-card">
+        <button class="app-card__bookmark"><img src="../../images/bookmark.svg" /></button>
+        <h2 class="app-card__title">Question</h2>
+        <p class="app-card__question">
+          What means HTML Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus!
+        </p>
+        <details>
+          <summary class="app-card__answer">Show answer</summary>
+          <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis beatae velit nesciunt, quod sint aut
+          libero architecto aliquid vel tempora.
+        </details>
+        <ul class="app-card__list">
+          <li class="app-card__list__item"><button class="app-card__button">Tag 1</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 2</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 3</button></li>
+          <li class="app-card__list__item"><button class="app-card__button">Tag 4</button></li>
+        </ul>
+      </section>
     </main>
+    <nav class="app-nav__grid">
+      <ul role="list" class="app-nav__list display-contents">
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" class="app-nav__link--active" href="./index.html"
+            ><img src="../../images/home.svg" width="40" height="40"
+          /></a>
+        </li>
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" href="./bookmarks.html"
+            ><img src="../../images/bookmark.svg" width="40" height="40"
+          /></a>
+        </li>
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" href="./create.html"><img src="../../images/create.svg" width="40" height="40" /></a>
+        </li>
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" href="./profile.html"
+            ><img src="../../images/profile-svgrepo-com.svg" width="40" height="40"
+          /></a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
