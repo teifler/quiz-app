@@ -1,0 +1,32 @@
+.app-profile {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto auto auto;
+  gap: 5px;
+}
+
+.app-profile__img {
+  grid-column: 1 /2;
+}
+
+.app-profile__about {
+  grid-column: span 3;
+}
+
+.app-profile__skills {
+  grid-column: 1/4;
+}
+
+.app-profile__logout {
+  grid-column: 1/4;
+  grid-row: 4/4;
+  align-self: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 3px;
+  background-color: #4b8df7;
+  border: #4b8df7;
+}
