@@ -13,11 +13,8 @@ ul[role="list"] {
   border-right: 1px solid black;
   padding-left: 40%;
   width: 100%;
-  background-color: #90e0ef;
-}
-
-.app-nav__link:hover {
-  background-color: #48cae4;
+  background-color: var(--color-top);
+  padding-top: 3px;
 }
 
 .display-contents {
