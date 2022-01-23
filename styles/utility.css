@@ -25,3 +25,7 @@
 .flex-justify {
   display: flex;
 }
+
+.ml-20 {
+  margin-left: 20px;
+}

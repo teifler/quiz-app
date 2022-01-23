@@ -1,0 +1,26 @@
+.app-nav__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: end;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+.app-nav__link {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  padding-left: 40%;
+  width: 100%;
+  background-color: #90e0ef;
+}
+
+.app-nav__link:hover {
+  background-color: #48cae4;
+}
+
+.display-contents {
+  display: contents;
+}
+/* ADD FOR ALL LI AND UL that we ignore li and ul because they dont have content*/
