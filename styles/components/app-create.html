@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a new question card</title>
+  </head>
+  <body>
+    <main>
+      <form class="app-create__form" autocomplete="off">
+        <label for="add-question">Please enter your question: </label>
+        <textarea
+          class="app-create__field"
+          id="add-question"
+          type="text"
+          placeholder="Add Question here"
+          required
+        ></textarea>
+
+        <label for="add-answer-field">Add the answer to your question: <br /></label>
+        <textarea
+          class="app-create__field"
+          id="add-answer-field"
+          type="text"
+          placeholder="Add answere here"
+          required
+        ></textarea>
+
+        <label for="add-tags-field">Add tags seperated by comma</label>
+        <input
+          class="app-create__field--input app-create__field"
+          id="add-tags-field"
+          type="text"
+          placeholder="For Example: css, html"
+          required
+        />
+        <button class="app-create__button" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
