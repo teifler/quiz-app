@@ -1,0 +1,46 @@
+.app-create__title {
+  background-color: var(--color-top);
+  width: 100%;
+}
+
+.app-create__field {
+  border: 3px solid lightsalmon;
+  margin-bottom: 15px;
+  background-color: var(--color-mid);
+  border-radius: 5px;
+}
+
+.app-create__field--input {
+  height: 40px;
+}
+
+.app-create__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-create__button {
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.app-create__button:hover {
+  letter-spacing: 0.2em;
+  background-color: #3882f6;
+}
+
+.app-create__button {
+  display: inline-block;
+  background-color: #4b8df7;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: var(--color-mid);
+}
