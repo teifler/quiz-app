@@ -7,3 +7,11 @@
 ul[role="list"] {
   list-style: none;
 }
+
+h1 {
+  color: var(--color-cyan);
+}
+
+h2 {
+  color: var(--color-yellow);
+}

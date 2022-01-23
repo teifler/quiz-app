@@ -1,10 +1,10 @@
 .app-card {
-  background-color: white;
   color: black;
   padding: 10px;
   position: relative;
   border: 1px solid black;
   width: 100%;
+  background-color: #e5e7eb;
   height: fit-content;
 }
 
@@ -12,6 +12,31 @@
   margin: 5px 0;
   color: #e84c3d;
   font-size: 1.2rem;
+}
+
+.app-card__question {
+  margin-left: 10px;
+}
+
+.app-card__answer:hover {
+  letter-spacing: 0.2em;
+  background-color: #3882f6;
+}
+
+.app-card__answer {
+  display: inline-block;
+  background-color: #4b8df7;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+}
+
+details {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .app-card__bookmark {
@@ -28,4 +53,22 @@
   justify-content: space-evenly;
   list-style-type: none;
   padding-left: 0;
+  margin-bottom: 0;
+}
+
+.app-card__button {
+  background-color: #4b8df7;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 20px;
+}
+
+.app-card__button:hover {
+  letter-spacing: 0.5em;
+  background-color: #3882f6;
 }
