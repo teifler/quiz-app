@@ -1,11 +1,18 @@
 .app-grid {
+  margin: 0;
   display: grid;
   grid-template-rows: 48px 1fr 48px;
 }
 
 .app-grid__title {
-  color: hsl(179, 62%, 43%);
+  color: #e84c3d;
   font-size: 2rem;
+  background-color: var(--color-top);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  padding-bottom: 24px;
+  text-align: center;
 }
 
 .app-grid__scrollarea {

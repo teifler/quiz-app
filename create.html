@@ -7,28 +7,60 @@
     <link rel="stylesheet" href="styles/index.css" />
     <title>Create new question and answers</title>
   </head>
-  <body>
-    <h1>Create questions and answers</h1>
+  <body class="app-grid h-100vh">
+    <h1 class="app-grid__title">Create Question</h1>
     <main>
-      <h2 id="add-question-heading”">Add new question and answer</h2>
-      <form aria-labelledby="”add-question-heading”" autocomplete="off">
-        <label for="add-question-field">Add Question: </label>
-        <textarea id="add-question-field" type="text" placeholder="Add Question here" required></textarea>
+      <form class="app-create__form" autocomplete="off">
+        <label for="add-question">Please enter your question: </label>
+        <textarea
+          class="app-create__field"
+          id="add-question"
+          type="text"
+          placeholder="Add Question here"
+          required
+        ></textarea>
 
-        <label for="add-answer-field">Add Answer: </label>
-        <textarea id="add-answer-field" type="text" placeholder="Add answere here" required></textarea>
+        <label for="add-answer-field">Add the answer to your question: <br /></label>
+        <textarea
+          class="app-create__field"
+          id="add-answer-field"
+          type="text"
+          placeholder="Add answere here"
+          required
+        ></textarea>
+
         <label for="add-tags-field">Add tags seperated by comma</label>
-        <input id="add-tags-field" type="text" placeholder="For Example: css, html" required />
-        <button type="submit">Submit</button>
+        <input
+          class="app-create__field--input app-create__field"
+          id="add-tags-field"
+          type="text"
+          placeholder="For Example: css, html"
+          required
+        />
+        <button class="app-create__button" type="submit">Submit</button>
       </form>
-      <nav>
-        <ul role="list">
-          <li><a href="./index.html">Quiz App</a></li>
-          <li><a href="./create.html">Create a new Question</a></li>
-          <li><a href="./bookmarks.html">Bookmarks</a></li>
-          <li><a href="./profile.html">Profile</a></li>
-        </ul>
-      </nav>
     </main>
+    <nav class="app-nav__grid">
+      <ul role="list" class="app-nav__list display-contents">
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" class="app-nav__link--active" href="./index.html"
+            ><img src="../../images/home.svg" width="40" height="40"
+          /></a>
+        </li>
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" href="./bookmarks.html"
+            ><img src="../../images/bookmark.svg" width="40" height="40"
+          /></a>
+        </li>
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" href="./create.html"><img src="../../images/create.svg" width="40" height="40" /></a>
+        </li>
+        <li class="app-nav__list--item display-contents">
+          <a class="app-nav__link" href="./profile.html"
+            ><img src="../../images/profile-svgrepo-com.svg" width="40" height="40"
+          /></a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
