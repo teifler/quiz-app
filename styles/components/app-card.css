@@ -6,6 +6,8 @@
   width: 100%;
   background-color: var(--color-main);
   height: fit-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .app-card__title {
