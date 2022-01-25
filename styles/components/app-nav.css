@@ -20,4 +20,8 @@ ul[role="list"] {
 .display-contents {
   display: contents;
 }
+
+.app-nav__link--active {
+  background: rgba(221, 190, 169, 0.4);
+}
 /* ADD FOR ALL LI AND UL that we ignore li and ul because they dont have content*/
