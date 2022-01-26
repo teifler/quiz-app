@@ -1,7 +1,7 @@
 const bookmarkElement = document.querySelector("[data-js=bookmark]");
 
 bookmarkElement.addEventListener("click", () => {
-  bookmarkElement.classList.add("bg-blue");
+  bookmarkElement.classList.toggle("bg-blue");
   console.log("its workin");
 });
 
