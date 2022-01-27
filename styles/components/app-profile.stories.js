@@ -1,7 +1,7 @@
-import html from "./app-profile.html";
+import html from './app-profile.html';
 
 export default {
-  title: "Components/app-profile",
+  title: 'Components/app-profile',
 };
 
 export const Default = () => html;
