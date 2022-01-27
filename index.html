@@ -11,13 +11,13 @@
     <h1 class="app-grid__title">QUIZ APP</h1>
     <main class="app-grid__scrollarea">
       <section class="app-card">
-        <button class="app-card__bookmark"><img src="../../images/bookmark.svg" /></button>
+        <button class="app-card__bookmark" data-js="bookmark"><img src="../../images/bookmark.svg" /></button>
         <h2 class="app-card__title">Question</h2>
         <p class="app-card__question">
           What means HTML Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, voluptatibus!
         </p>
         <details>
-          <summary class="app-card__answer">Show answer</summary>
+          <summary class="app-card__answer" js-data="hide-show">Show answer</summary>
           <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis beatae velit nesciunt, quod sint aut
           libero architecto aliquid vel tempora.
         </details>
@@ -68,17 +68,19 @@
     <nav class="app-nav__grid">
       <ul role="list" class="app-nav__list display-contents">
         <li class="app-nav__list--item display-contents">
-          <a class="app-nav__link" class="app-nav__link--active" href="./index.html"
+          <a class="app-nav__link js-activeSite" href="./index.html"
             ><img src="../../images/home.svg" width="40" height="40"
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
-          <a class="app-nav__link" href="./bookmarks.html"
+          <a class="app-nav__link" js-data="bookmarks" href="./bookmarks.html"
             ><img src="../../images/bookmark.svg" width="40" height="40"
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
-          <a class="app-nav__link" href="./create.html"><img src="../../images/create.svg" width="40" height="40" /></a>
+          <a class="app-nav__link" js-data="create" href="./create.html"
+            ><img src="../../images/create.svg" width="40" height="40"
+          /></a>
         </li>
         <li class="app-nav__list--item display-contents">
           <a class="app-nav__link" href="./profile.html"
@@ -87,5 +89,7 @@
         </li>
       </ul>
     </nav>
+    <script language="javascript" type="text/javascript" src="activeSite.js" defer></script>
+    <script language="javascript" type="text/javascript" src="bookmarkColoring.js" defer></script>
   </body>
 </html>
