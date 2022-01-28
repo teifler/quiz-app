@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    <script type="module" src="index.js" defer></script>
     <title>QUIZ APP</title>
   </head>
   <body class="app-grid h-100vh">
@@ -12,7 +13,7 @@
     <main class="app-grid__scrollarea">
       <section class="app-card">
         <button class="app-card__bookmark" data-js="bookmark">
-          <img src="../../images/bookmark.svg" />
+          <img alt="" src="../../images/bookmark.svg" />
         </button>
         <h2 class="app-card__title">Question</h2>
         <p class="app-card__question">
@@ -20,7 +21,7 @@
           elit. Eius, voluptatibus!
         </p>
         <details>
-          <summary class="app-card__answer" js-data="hide-show">
+          <summary class="app-card__answer" data-js="hide-show-answer">
             Show answer
           </summary>
           <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -44,7 +45,7 @@
       </section>
       <section class="app-card mb-20">
         <button class="app-card__bookmark">
-          <img src="../../images/bookmark.svg" />
+          <img alt="" src="../../images/bookmark.svg" />
         </button>
         <h2 class="app-card__title">Question</h2>
         <p class="app-card__question">
@@ -74,7 +75,7 @@
       </section>
       <section class="app-card mb-20">
         <button class="app-card__bookmark">
-          <img src="../../images/bookmark.svg" />
+          <img alt="" src="../../images/bookmark.svg" />
         </button>
         <h2 class="app-card__title">Question</h2>
         <p class="app-card__question">
@@ -107,17 +108,17 @@
       <ul role="list" class="app-nav__list display-contents">
         <li class="app-nav__list--item display-contents">
           <a class="app-nav__link js-activeSite" href="./index.html"
-            ><img src="../../images/home.svg" width="40" height="40"
+            ><img alt="" src="../../images/home.svg" width="40" height="40"
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
           <a class="app-nav__link" js-data="bookmarks" href="./bookmarks.html"
-            ><img src="../../images/bookmark.svg" width="40" height="40"
+            ><img src="../../images/bookmark.svg" width="40" height="40" alt=""
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
           <a class="app-nav__link" js-data="create" href="./create.html"
-            ><img src="../../images/create.svg" width="40" height="40"
+            ><img src="../../images/create.svg" width="40" height="40" alt=""
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
@@ -126,21 +127,10 @@
               src="../../images/profile-svgrepo-com.svg"
               width="40"
               height="40"
+              alt=""
           /></a>
         </li>
       </ul>
     </nav>
-    <script
-      language="javascript"
-      type="text/javascript"
-      src="activeSite.js"
-      defer
-    ></script>
-    <script
-      language="javascript"
-      type="text/javascript"
-      src="bookmarkColoring.js"
-      defer
-    ></script>
   </body>
 </html>

@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    <script type="module" src="index.js" defer></script>
     <title>Create new question and answers</title>
   </head>
   <body class="app-grid h-100vh">
     <h1 class="app-grid__title">Create Question</h1>
     <main>
       <form class="app-create__form" autocomplete="off">
-        <label for="add-question">Please enter your question: </label>
+        <label for="add-question" data-js="insertCounter" id="yolo"
+          >Please enter your question:
+        </label>
         <textarea
           class="app-create__field"
           id="add-question"
           type="text"
           placeholder="Add Question here"
           required
+          data-js="add-question"
+          maxlength="200"
         ></textarea>
 
         <label for="add-answer-field"
@@ -27,6 +32,7 @@
           class="app-create__field"
           id="add-answer-field"
           type="text"
+          maxlength="200"
           placeholder="Add answere here"
           required
         ></textarea>
@@ -45,21 +51,18 @@
     <nav class="app-nav__grid">
       <ul role="list" class="app-nav__list display-contents">
         <li class="app-nav__list--item display-contents">
-          <a
-            class="app-nav__link"
-            class="app-nav__link--active"
-            href="./index.html"
-            ><img src="../../images/home.svg" width="40" height="40"
+          <a class="app-nav__link" href="./index.html"
+            ><img alt="" src="../../images/home.svg" width="40" height="40"
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
           <a class="app-nav__link" href="./bookmarks.html"
-            ><img src="../../images/bookmark.svg" width="40" height="40"
+            ><img src="../../images/bookmark.svg" width="40" height="40" alt=""
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
           <a class="app-nav__link js-activeSite" href="./create.html"
-            ><img src="../../images/create.svg" width="40" height="40"
+            ><img src="../../images/create.svg" width="40" height="40" alt=""
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
@@ -68,10 +71,10 @@
               src="../../images/profile-svgrepo-com.svg"
               width="40"
               height="40"
+              alt=""
           /></a>
         </li>
       </ul>
     </nav>
-    <script src="activeSite.js"></script>
   </body>
 </html>
