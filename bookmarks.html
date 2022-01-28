@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
+    <script type="module" src="index.js" defer></script>
     <title>Bookmarks</title>
   </head>
   <body class="app-grid h-100vh">
@@ -12,7 +13,7 @@
     <main class="app-grid__scrollarea">
       <section class="app-card">
         <button class="app-card__bookmark" data-js="bookmark">
-          <img src="../../images/bookmark.svg" />
+          <img src="../../images/bookmark.svg" alt="" />
         </button>
         <h2 class="app-card__title">Question</h2>
         <p class="app-card__question">
@@ -42,7 +43,7 @@
       </section>
       <section class="app-card">
         <button class="app-card__bookmark">
-          <img src="../../images/bookmark.svg" />
+          <img src="../../images/bookmark.svg" alt="" />
         </button>
         <h2 class="app-card__title">Question</h2>
         <p class="app-card__question">
@@ -72,7 +73,7 @@
       </section>
       <section class="app-card">
         <button class="app-card__bookmark">
-          <img src="../../images/bookmark.svg" />
+          <img src="../../images/bookmark.svg" alt="" />
         </button>
         <h2 class="app-card__title">Question</h2>
         <p class="app-card__question">
@@ -104,11 +105,8 @@
     <nav class="app-nav__grid">
       <ul role="list" class="app-nav__list display-contents">
         <li class="app-nav__list--item display-contents">
-          <a
-            class="app-nav__link"
-            class="app-nav__link--active"
-            href="./index.html"
-            ><img src="../../images/home.svg" width="40" height="40"
+          <a class="app-nav__link" href="./index.html"
+            ><img src="../../images/home.svg" width="40" height="40" alt=""
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
@@ -116,12 +114,12 @@
             class="app-nav__link js-activeSite"
             data-js="bookmarks"
             href="./bookmarks.html"
-            ><img src="../../images/bookmark.svg" width="40" height="40"
+            ><img src="../../images/bookmark.svg" width="40" height="40" alt=""
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
           <a class="app-nav__link" href="./create.html"
-            ><img src="../../images/create.svg" width="40" height="40"
+            ><img src="../../images/create.svg" width="40" height="40" alt=""
           /></a>
         </li>
         <li class="app-nav__list--item display-contents">
@@ -130,15 +128,10 @@
               src="../../images/profile-svgrepo-com.svg"
               width="40"
               height="40"
+              alt="test"
           /></a>
         </li>
       </ul>
     </nav>
-    <script src="activeSite.js"></script>
-    <script
-      language="javascript"
-      type="text/javascript"
-      src="activeSite.js"
-    ></script>
   </body>
 </html>
