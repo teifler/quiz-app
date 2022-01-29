@@ -205,9 +205,9 @@
     <!-- CREATE -->
     <main class="hidden" data-page="create">
       <form class="app-create__form" autocomplete="off">
-        <label for="add-question" data-js="insertCounter" id="yolo"
+        <label class="app-create__label" for="add-question" id="yolo"
           >Add Question:
-          <output class="app-create__output">Characters remaining: </output>
+          <output data-js="outputCounter" class="app-create__output"></output>
           <br />
           <textarea
             class="app-create__field"
@@ -215,14 +215,14 @@
             type="text"
             placeholder="Add Question here"
             required
-            data-js="add-question"
+            data-js="add-question-input"
             maxlength="200"
           ></textarea>
         </label>
 
         <label class="app-create__label" for="add-answer-field"
           >Add answer:
-          <output>Characters remaining: </output>
+          <output class="app-create__output">Characters remaining: </output>
           <br />
           <textarea
             class="app-create__field"
@@ -312,24 +312,37 @@
     </main>
 
     <!-- NAV BAR-->
-    <nav class="app-nav__grid">
-      <ul role="list" class="app-nav__list display-contents">
-        <li class="app-nav__list--item display-contents" data-nav="home">
-          <img alt="" src="../../images/home.svg" width="40" height="40" />
+    <nav class="">
+      <ul role="list" class="app-nav__grid">
+        <li class="app-nav__list--item item1">
+          <div class="app-nav--flex" data-nav="home">
+            <img alt="" src="../../images/home.svg" width="48" height="48" />
+          </div>
         </li>
-        <li class="app-nav__list--item display-contents" data-nav="bookmarks">
-          <img src="../../images/bookmark.svg" width="40" height="40" alt="" />
+        <li class="app-nav__list--item item2">
+          <div class="app-nav--flex" data-nav="bookmarks">
+            <img
+              src="../../images/bookmark.svg"
+              width="40"
+              height="40"
+              alt=""
+            />
+          </div>
         </li>
-        <li class="app-nav__list--item display-contents" data-nav="create">
-          <img src="../../images/create.svg" width="40" height="40" alt="" />
+        <li class="app-nav__list--item item3" data-nav="create">
+          <div class="app-nav--flex" data-nav="create">
+            <img src="../../images/create.svg" width="40" height="40" alt="" />
+          </div>
         </li>
-        <li class="app-nav__list--item display-contents" data-nav="profile">
-          <img
-            src="../../images/profile-svgrepo-com.svg"
-            width="40"
-            height="40"
-            alt=""
-          />
+        <li class="app-nav__list--item item4" data-nav="profile">
+          <div class="app-nav--flex" data-nav="profile">
+            <img
+              src="../../images/profile-svgrepo-com.svg"
+              width="40"
+              height="40"
+              alt=""
+            />
+          </div>
         </li>
       </ul>
     </nav>

@@ -11,6 +11,18 @@
   width: 100vw;
 }
 
+.app-create__output {
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  font-size: 0.8rem;
+  color: black;
+}
+
+.app-create__label {
+  position: relative;
+}
+
 .app-create__field--input {
   height: 40px;
 }
