@@ -8,6 +8,7 @@
   margin-bottom: 15px;
   background-color: var(--color-mid);
   border-radius: 5px;
+  width: 100vw;
 }
 
 .app-create__field--input {
@@ -15,19 +16,14 @@
 }
 
 .app-create__form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 10px;
 }
 
 .app-create__button {
   padding: 10px 20px;
   margin: 0 auto;
   border-radius: 3px;
-}
-
-.app-create__button:hover {
-  letter-spacing: 0.2em;
-  background-color: #3882f6;
 }
 
 .app-create__button {

@@ -3,11 +3,13 @@ export function navigation() {
   const buttonBookmarks = document.querySelector('[data-nav="bookmarks"]');
   const buttonCreate = document.querySelector('[data-nav="create"]');
   const buttonProfile = document.querySelector('[data-nav="profile"]');
+  const buttonLoggedOut = document.querySelector('[data-js="loginLogout"]');
 
   const pageHome = document.querySelector('[data-page="home"]');
   const pageBookmarks = document.querySelector('[data-page="bookmarks"]');
   const pageCreate = document.querySelector('[data-page="create"]');
   const pageProfile = document.querySelector('[data-page="profile"]');
+  const pageLoggedOut = document.querySelector('[data-page="loggedOut"]');
 
   const headerTitle = document.querySelector('[data-js="headerTitle"]');
 
@@ -41,5 +43,14 @@ export function navigation() {
     pageBookmarks.classList.add('hidden');
     pageCreate.classList.add('hidden');
     pageProfile.classList.remove('hidden');
+  });
+
+  buttonLoggedOut?.addEventListener('click', event => {
+    headerTitle.textContent = 'Login';
+    pageHome.classList.add('hidden');
+    pageBookmarks.classList.add('hidden');
+    pageCreate.classList.add('hidden');
+    pageProfile.classList.add('hidden');
+    pageLoggedOut.classList.remove('hidden');
   });
 }

@@ -206,8 +206,9 @@
     <main class="hidden" data-page="create">
       <form class="app-create__form" autocomplete="off">
         <label for="add-question" data-js="insertCounter" id="yolo"
-          >Please enter your question:
+          >Add Question:
           <output class="app-create__output">Characters remaining: </output>
+          <br />
           <textarea
             class="app-create__field"
             id="add-question"
@@ -220,8 +221,9 @@
         </label>
 
         <label class="app-create__label" for="add-answer-field"
-          >Add the answer to your question:
+          >Add answer:
           <output>Characters remaining: </output>
+          <br />
           <textarea
             class="app-create__field"
             id="add-answer-field"
@@ -281,6 +283,33 @@
       </button>
     </main>
     <!-- END OF PROFILE-->
+
+    <!-- LOGGED OUT -->
+    <main data-page="loggedOut" class="app-grid__scrollarea hidden">
+      <p>Please sign in to continue</p>
+      <form class="app-create__form" autocomplete="off">
+        <label for="user-login"
+          >Please enter your EMAIL:
+          <input
+            class="app-create__field"
+            id="user-email"
+            type="text"
+            placeholder="user123@email.com"
+            required
+          />
+          <br />
+          Please enter your Password:
+          <input
+            class="app-create__field"
+            id="user-pass"
+            type="password"
+            placeholder="Password"
+            required
+          /><br />
+          <button>Login</button>
+        </label>
+      </form>
+    </main>
 
     <!-- NAV BAR-->
     <nav class="app-nav__grid">

@@ -1,7 +1,7 @@
 .app-nav__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  place-items: end;
+  place-items: center;
 }
 
 ul[role='list'] {

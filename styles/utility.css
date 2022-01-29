@@ -22,6 +22,11 @@
   background-color: hotpink;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-justify {
   display: flex;
   justify-content: center;
