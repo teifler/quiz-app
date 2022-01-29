@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
-    <script type="module" src="index.js" defer></script>
+    <script type="module" src="./index.js" defer></script>
     <title>QUIZ APP</title>
   </head>
   <body class="app-grid h-100vh">
-    <h1 class="app-grid__title">QUIZ APP</h1>
-    <main class="app-grid__scrollarea">
+    <h1 class="app-grid__title" data-js="headerTitle">QUIZ APP</h1>
+    <!-- START INDEX-->
+    <main class="app-grid__scrollarea" data-page="home">
       <section class="app-card">
         <button class="app-card__bookmark" data-js="bookmark">
           <img alt="" src="../../images/bookmark.svg" />
@@ -104,31 +105,202 @@
         </ul>
       </section>
     </main>
+    <!-- END INDEX-->
+
+    <!-- START BOOKMARK-->
+    <main class="app-grid__scrollarea hidden" data-page="bookmarks">
+      <section class="app-card">
+        <button class="app-card__bookmark" data-js="bookmark">
+          <img src="../../images/bookmark.svg" alt="" />
+        </button>
+        <h2 class="app-card__title">Question</h2>
+        <p class="app-card__question">
+          What means HTML Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Eius, voluptatibus!
+        </p>
+        <details>
+          <summary class="app-card__answer">Show answer</summary>
+          <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Debitis beatae velit nesciunt, quod sint aut libero architecto aliquid
+          vel tempora.
+        </details>
+        <ul class="app-card__list">
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 1</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 2</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 3</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 4</button>
+          </li>
+        </ul>
+      </section>
+      <section class="app-card">
+        <button class="app-card__bookmark">
+          <img src="../../images/bookmark.svg" alt="" />
+        </button>
+        <h2 class="app-card__title">Question</h2>
+        <p class="app-card__question">
+          What means HTML Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Eius, voluptatibus!
+        </p>
+        <details>
+          <summary class="app-card__answer">Show answer</summary>
+          <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Debitis beatae velit nesciunt, quod sint aut libero architecto aliquid
+          vel tempora.
+        </details>
+        <ul class="app-card__list">
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 1</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 2</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 3</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 4</button>
+          </li>
+        </ul>
+      </section>
+      <section class="app-card">
+        <button class="app-card__bookmark">
+          <img src="../../images/bookmark.svg" alt="" />
+        </button>
+        <h2 class="app-card__title">Question</h2>
+        <p class="app-card__question">
+          What means HTML Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Eius, voluptatibus!
+        </p>
+        <details>
+          <summary class="app-card__answer">Show answer</summary>
+          <br />Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Debitis beatae velit nesciunt, quod sint aut libero architecto aliquid
+          vel tempora.
+        </details>
+        <ul class="app-card__list">
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 1</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 2</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 3</button>
+          </li>
+          <li class="app-card__list__item">
+            <button class="app-card__button">Tag 4</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- END BOOKMARK-->
+
+    <!-- CREATE -->
+    <main class="hidden" data-page="create">
+      <form class="app-create__form" autocomplete="off">
+        <label for="add-question" data-js="insertCounter" id="yolo"
+          >Please enter your question:
+          <output class="app-create__output">Characters remaining: </output>
+          <textarea
+            class="app-create__field"
+            id="add-question"
+            type="text"
+            placeholder="Add Question here"
+            required
+            data-js="add-question"
+            maxlength="200"
+          ></textarea>
+        </label>
+
+        <label class="app-create__label" for="add-answer-field"
+          >Add the answer to your question:
+          <output>Characters remaining: </output>
+          <textarea
+            class="app-create__field"
+            id="add-answer-field"
+            type="text"
+            maxlength="200"
+            placeholder="Add answere here"
+            required
+          ></textarea>
+        </label>
+
+        <label class="app-create__label" for="add-tags-field"
+          >Add tags seperated by comma</label
+        >
+        <input
+          class="app-create__field--input app-create__field"
+          id="add-tags-field"
+          type="text"
+          placeholder="For Example: css, html"
+          required
+        />
+        <button class="app-create__button" type="submit">Submit</button>
+      </form>
+    </main>
+    <!-- END OF CREATE-->
+
+    <!-- PROFILE -->
+    <main class="app-grid__scrollarea hidden" data-page="profile">
+      <section data-js="appProfile" class="app-profile">
+        <figure class="app-profile__img">
+          <img
+            src="https://source.unsplash.com/random/100x100/?selfie"
+            alt="selfie"
+            width="100"
+            height="100"
+            class="profile__img--border"
+          />
+        </figure>
+        <h2 class="profile__name">Name</h2>
+        <p class="app-profile__about">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+          reiciendis blanditiis officia ratione! Modi minima aliquam optio
+          deserunt, a expedita rerum delectus recusandae deleniti ex
+          exercitationem accusantium, laboriosam quas ab.
+        </p>
+        <div class="profile__skills">
+          <h3>Skills</h3>
+          <ul role="list" class="profile__skills-flex no-bul">
+            <li class="profile__skills-flex--style inline">skill 1</li>
+            <li class="profile__skills-flex--style inline">skill 2</li>
+            <li class="profile__skills-flex--style inline">skill 3</li>
+            <li class="profile__skills-flex--style inline">skill 4</li>
+          </ul>
+        </div>
+      </section>
+      <button data-js="loginLogout" class="app-profile__logout flex-justify">
+        Logout
+      </button>
+    </main>
+    <!-- END OF PROFILE-->
+
+    <!-- NAV BAR-->
     <nav class="app-nav__grid">
       <ul role="list" class="app-nav__list display-contents">
-        <li class="app-nav__list--item display-contents">
-          <a class="app-nav__link js-activeSite" href="./index.html"
-            ><img alt="" src="../../images/home.svg" width="40" height="40"
-          /></a>
+        <li class="app-nav__list--item display-contents" data-nav="home">
+          <img alt="" src="../../images/home.svg" width="40" height="40" />
         </li>
-        <li class="app-nav__list--item display-contents">
-          <a class="app-nav__link" js-data="bookmarks" href="./bookmarks.html"
-            ><img src="../../images/bookmark.svg" width="40" height="40" alt=""
-          /></a>
+        <li class="app-nav__list--item display-contents" data-nav="bookmarks">
+          <img src="../../images/bookmark.svg" width="40" height="40" alt="" />
         </li>
-        <li class="app-nav__list--item display-contents">
-          <a class="app-nav__link" js-data="create" href="./create.html"
-            ><img src="../../images/create.svg" width="40" height="40" alt=""
-          /></a>
+        <li class="app-nav__list--item display-contents" data-nav="create">
+          <img src="../../images/create.svg" width="40" height="40" alt="" />
         </li>
-        <li class="app-nav__list--item display-contents">
-          <a class="app-nav__link" href="./profile.html"
-            ><img
-              src="../../images/profile-svgrepo-com.svg"
-              width="40"
-              height="40"
-              alt=""
-          /></a>
+        <li class="app-nav__list--item display-contents" data-nav="profile">
+          <img
+            src="../../images/profile-svgrepo-com.svg"
+            width="40"
+            height="40"
+            alt=""
+          />
         </li>
       </ul>
     </nav>
