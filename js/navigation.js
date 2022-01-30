@@ -35,9 +35,10 @@ export function navigation() {
   });
 
   buttonProfile?.addEventListener('click', () => {
+    addHiddenAll();
     headerTitle.textContent = 'Profile';
-    buttonProfile.classList.add('app-nav__item--active');
     pageProfile.classList.remove('hidden');
+    buttonProfile.classList.add('app-nav__item--active');
   });
 
   buttonLoggedOut?.addEventListener('click', event => {
@@ -59,9 +60,5 @@ export function navigation() {
     buttonBookmarks.classList.remove('app-nav__item--active');
     buttonCreate.classList.remove('app-nav__item--active');
     buttonProfile.classList.remove('app-nav__item--active');
-  }
-
-  function addActive(buttonElement) {
-    buttonElement.classList.remove('hidden');
   }
 }
