@@ -28,27 +28,7 @@ ul[role='list'] {
   display: contents;
 }
 
-.item1 {
-  grid-column: 1/2;
-  width: 100%;
-}
-
-.item2 {
-  grid-column: 2/3;
-  width: 100%;
-}
-
-.item3 {
-  grid-column: 3/4;
-  width: 100%;
-}
-
-.item4 {
-  grid-column: 4/5;
-  width: 100%;
-}
-
-.app-nav__link--active {
-  background: rgba(221, 190, 169, 0.4);
+.app-nav__item--active {
+  background: #ddbea9;
 }
 /* ADD FOR ALL LI AND UL that we ignore li and ul because they dont have content*/

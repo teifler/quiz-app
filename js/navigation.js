@@ -13,35 +13,30 @@ export function navigation() {
 
   const headerTitle = document.querySelector('[data-js="headerTitle"]');
 
-  buttonHome?.addEventListener('click', () => {
+  buttonHome?.addEventListener('click', event => {
+    addHiddenAll();
+    headerTitle.textContent = 'Quiz App';
     pageHome.classList.remove('hidden');
-    pageBookmarks.classList.add('hidden');
-    pageCreate.classList.add('hidden');
-    pageProfile.classList.add('hidden');
+    buttonHome.classList.add('app-nav__item--active');
   });
 
   buttonBookmarks?.addEventListener('click', () => {
+    addHiddenAll();
     headerTitle.textContent = 'Bookmarks';
-    console.log('DRINNEN BOOKMARK' + buttonBookmarks);
-    pageHome.classList.add('hidden');
+    buttonBookmarks.classList.add('app-nav__item--active');
     pageBookmarks.classList.remove('hidden');
-    pageCreate.classList.add('hidden');
-    pageProfile.classList.add('hidden');
   });
 
   buttonCreate?.addEventListener('click', () => {
+    addHiddenAll();
     headerTitle.textContent = 'Create';
-    pageHome.classList.add('hidden');
-    pageBookmarks.classList.add('hidden');
     pageCreate.classList.remove('hidden');
-    pageProfile.classList.add('hidden');
+    buttonCreate.classList.add('app-nav__item--active');
   });
 
   buttonProfile?.addEventListener('click', () => {
     headerTitle.textContent = 'Profile';
-    pageHome.classList.add('hidden');
-    pageBookmarks.classList.add('hidden');
-    pageCreate.classList.add('hidden');
+    buttonProfile.classList.add('app-nav__item--active');
     pageProfile.classList.remove('hidden');
   });
 
@@ -53,4 +48,20 @@ export function navigation() {
     pageProfile.classList.add('hidden');
     pageLoggedOut.classList.remove('hidden');
   });
+
+  function addHiddenAll() {
+    pageHome.classList.add('hidden');
+    pageBookmarks.classList.add('hidden');
+    pageCreate.classList.add('hidden');
+    pageProfile.classList.add('hidden');
+    pageLoggedOut.classList.add('hidden');
+    buttonHome.classList.remove('app-nav__item--active');
+    buttonBookmarks.classList.remove('app-nav__item--active');
+    buttonCreate.classList.remove('app-nav__item--active');
+    buttonProfile.classList.remove('app-nav__item--active');
+  }
+
+  function addActive(buttonElement) {
+    buttonElement.classList.remove('hidden');
+  }
 }

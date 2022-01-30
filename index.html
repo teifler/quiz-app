@@ -297,40 +297,42 @@
 
     <!-- LOGGED OUT -->
     <main data-page="loggedOut" class="app-grid__scrollarea hidden">
-      <p>Please sign in to continue</p>
-      <form class="app-create__form" autocomplete="off">
-        <label for="user-login"
-          >Please enter your EMAIL:
-          <input
-            class="app-create__field"
-            id="user-email"
-            type="text"
-            placeholder="user123@email.com"
-            required
-          />
-          <br />
-          Please enter your Password:
-          <input
-            class="app-create__field"
-            id="user-pass"
-            type="password"
-            placeholder="Password"
-            required
-          /><br />
-          <button>Login</button>
-        </label>
-      </form>
+      <section>
+        <p>Please sign in to continue</p>
+        <form class="app-create__form" autocomplete="off">
+          <label for="user-login"
+            >Please enter your EMAIL:
+            <input
+              class="app-create__field"
+              id="user-email"
+              type="text"
+              placeholder="user123@email.com"
+              required
+            />
+            <br />
+            Please enter your Password:
+            <input
+              class="app-create__field"
+              id="user-pass"
+              type="password"
+              placeholder="Password"
+              required
+            /><br />
+            <button>Login</button>
+          </label>
+        </form>
+      </section>
     </main>
 
     <!-- NAV BAR-->
     <nav class="">
       <ul role="list" class="app-nav__grid">
-        <li class="app-nav__list--item item1">
+        <li class="app-nav__list--item">
           <div class="app-nav--flex" data-nav="home">
             <img alt="" src="../../images/home.svg" width="48" height="48" />
           </div>
         </li>
-        <li class="app-nav__list--item item2">
+        <li class="app-nav__list--item">
           <div class="app-nav--flex" data-nav="bookmarks">
             <img
               src="../../images/bookmark.svg"
