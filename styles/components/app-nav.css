@@ -30,5 +30,6 @@ ul[role='list'] {
 
 .app-nav__item--active {
   background: #ddbea9;
+  width: 100%;
 }
 /* ADD FOR ALL LI AND UL that we ignore li and ul because they dont have content*/
