@@ -20,7 +20,6 @@
 }
 
 .app-profile__logout {
-  gap: 500px;
   grid-column: 1/4;
   grid-row: 4/4;
   align-self: center;
