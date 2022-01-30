@@ -1,27 +1,35 @@
 .app-nav__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  place-items: end;
+  padding: 0px;
 }
 
 ul[role='list'] {
   list-style: none;
+  margin: 0;
 }
 
-.app-nav__link {
+.app-nav__list--item {
   border-top: 1px solid black;
   border-right: 1px solid black;
-  padding-left: 40%;
   width: 100%;
-  background-color: var(--color-top);
-  padding-top: 3px;
+  display: inline;
+  /* background-color: var(--color-top); */
+}
+
+.app-nav--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .display-contents {
   display: contents;
 }
 
-.app-nav__link--active {
-  background: rgba(221, 190, 169, 0.4);
+.app-nav__item--active {
+  background: #ddbea9;
+  width: 100%;
 }
 /* ADD FOR ALL LI AND UL that we ignore li and ul because they dont have content*/

@@ -22,10 +22,24 @@
   background-color: hotpink;
 }
 
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex-justify {
   display: flex;
+  justify-content: center;
 }
 
 .ml-20 {
   margin-left: 20px;
+}
+
+.js-hide {
+  display: none;
+}
+
+.hidden {
+  display: none;
 }

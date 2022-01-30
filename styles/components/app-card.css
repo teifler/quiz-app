@@ -41,13 +41,18 @@ details {
   text-align: center;
 }
 
+.app-card__bookmark--marked {
+  fill: red;
+}
+
 .app-card__bookmark {
-  top: -15px;
+  top: -20px;
   right: 20px;
   width: 2rem;
   height: 3rem;
-  color: blue;
   position: absolute;
+  background-color: transparent;
+  border: 0;
 }
 
 .app-card__list {
