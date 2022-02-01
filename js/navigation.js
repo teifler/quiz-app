@@ -1,4 +1,5 @@
 export function navigation() {
+  /*
   const buttonHome = document.querySelector('[data-nav="home"]');
   const buttonBookmarks = document.querySelector('[data-nav="bookmarks"]');
   const buttonCreate = document.querySelector('[data-nav="create"]');
@@ -61,4 +62,39 @@ export function navigation() {
     buttonCreate.classList.remove('app-nav__item--active');
     buttonProfile.classList.remove('app-nav__item--active');
   }
+}
+*/
+  const allButtons = document.querySelectorAll('[data-nav]');
+  const allPages = document.querySelectorAll('[data-page]');
+  //for all buttons
+  allButtons.forEach(button => {
+    //start eventlistener for all buttons that each button is waiting for
+    //click
+    button.addEventListener('click', event => {
+      //When clicked every button should remove the active class
+      //which might got set before
+      allButtons.forEach(button => {
+        button.classList.remove('app-nav__item--active');
+      });
+      //Hide all pages after click (so that shown gets hidden)
+      allPages.forEach(page => {
+        page.classList.add('hidden');
+      });
+      //The button which got clicked get the data-nav attribute
+      const buttonAttribute = event.currentTarget.getAttribute('data-nav');
+
+      //get element with data-page="x" and save it in variable
+      const currentPage = document.querySelector(
+        `[data-page="${buttonAttribute}"]`
+      );
+      //get element with data-nav="x" and save it in variable
+      const currentButton = document.querySelector(
+        `[data-nav="${buttonAttribute}"]`
+      );
+      //Add active to highlight in in nav bar
+      currentButton.classList.add('app-nav__item--active');
+      //Remove hide class of page so that you can see the clicked page
+      currentPage.classList.remove('hidden');
+    });
+  });
 }

@@ -12,6 +12,7 @@ ul[role='list'] {
 .app-nav__list--item {
   border-top: 1px solid black;
   border-right: 1px solid black;
+  border-radius: 8px;
   width: 100%;
   display: inline;
   /* background-color: var(--color-top); */
